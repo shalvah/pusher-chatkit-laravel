@@ -1,0 +1,52 @@
+{
+    "name": "pusher/pusher-http-laravel",
+    "description": "A Pusher bridge for Laravel",
+    "license": "MIT",
+    "keywords": ["laravel", "pusher", "chatkit", "http", "api", "php-chatkit-server", "rest", "realtime", "chat"],
+    "authors": [
+        {
+            "name": "Shalvah Adebayo",
+            "email": "shalvah.adebayo@gmail.com",
+            "homepage": "https://shalvah.me"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/contracts": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "graham-campbell/manager": "^3.0",
+        "pusher/pusher-chatkit-server": "^0.2.1"
+    },
+    "require-dev": {
+        "graham-campbell/analyzer": "^1.1",
+        "graham-campbell/testbench": "^4.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^3.5",
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chatkit\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chatkit\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chatkit\\Laravel\\ChatkitServiceProvider"
+            ],
+            "aliases": {
+                "Chatkit": "Chatkit\\Laravel\\Facades\\Chatkit"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
