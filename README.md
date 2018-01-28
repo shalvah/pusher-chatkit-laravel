@@ -4,8 +4,8 @@
 
 > A Laravel wrapper for [Pusher Chatkit](https://github.com/pusher/chatkit-server-php). Find out more about Chatkit [here](https://pusher.com/chatkit).
 
-[![Build Status](https://img.shields.io/travis/pusher/pusher-chatkit-laravel/master.svg?style=flat)](https://travis-ci.org/pusher/pusher-http-laravel)
-[![Latest Version](https://img.shields.io/github/release/pusher/pusher-chatkit-laravel.svg?style=flat)](https://github.com/pusher/pusher-http-laravel/releases)
+[![Build Status](https://img.shields.io/travis/shalvah/pusher-chatkit-laravel/master.svg?style=flat)](https://travis-ci.org/shalvah/pusher-chatkit-laravel)
+[![Latest Version](https://img.shields.io/github/release/shalvah/pusher-chatkit-laravel.svg?style=flat)](https://github.com/shalvah/pusher-chatkit-laravel/releases)
 
 *Note*: This package requires Laravel 5.5 or above 
 
@@ -56,7 +56,7 @@ public function startChatting(ChatkitManager $chatkitManager, string $introMessa
 The minimum configuration you'll need is to add your Chatkit app credentials to your `.env` file. If you'd like further customisation (for instance, to use multiple connections), you'll need to publish the config file:
 
 ```bash
-php artisan vendor:publish --provider="Pusher\Chatkit\Laravel\PusherServiceProvider"
+php artisan vendor:publish --provider="Chatkit\Laravel\ChatkitServiceProvider"
 ```
 
 This will create a `config/chatkit.php` file in your app that you can modify to match your configuration. 
