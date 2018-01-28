@@ -11,7 +11,7 @@ use Chatkit\Laravel\ChatkitFactory;
 use Chatkit\Laravel\ChatkitManager;
 use Chatkit\Chatkit;
 
-class AbstractPackageTest extends TestCase
+abstract class BasePackageTest extends TestCase
 {
     protected $config = ['path' => __DIR__, 'name' => 'chatkit'];
 

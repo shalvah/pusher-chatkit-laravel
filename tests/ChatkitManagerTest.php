@@ -6,7 +6,7 @@ namespace Chatkit\Tests\Laravel;
 
 use Chatkit\Chatkit;
 
-class ChatkitManagerTest extends AbstractPackageTest
+class ChatkitManagerTest extends BasePackageTest
 {
     public function test_manager_creates_connection_successfully()
     {
