@@ -1,5 +1,5 @@
 {
-    "name": "pusher/pusher-chatkit-laravel",
+    "name": "shalvah/pusher-chatkit-laravel",
     "description": "Laravel wrapper for the Chatkit PHP SDK",
     "license": "MIT",
     "keywords": ["laravel", "pusher", "chatkit", "http", "api", "php-chatkit-server", "rest", "realtime", "chat"],
