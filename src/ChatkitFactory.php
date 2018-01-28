@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Pusher\Chatkit\Laravel;
+namespace Chatkit\Laravel;
 
 use Chatkit\Chatkit;
 use InvalidArgumentException;

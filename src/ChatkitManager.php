@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Pusher\Chatkit\Laravel;
+namespace Chatkit\Laravel;
 
 use Chatkit\Chatkit;
 use GrahamCampbell\Manager\AbstractManager;
@@ -29,7 +29,7 @@ class ChatkitManager extends AbstractManager
     /**
      * The factory instance.
      *
-     * @var \Vinkla\Pusher\PusherFactory
+     * @var ChatkitFactory
      */
     private $factory;
 
@@ -69,4 +69,8 @@ class ChatkitManager extends AbstractManager
         return 'chatkit';
     }
 
+    public function getFactory(): ChatkitFactory
+    {
+        return $this->factory;
+    }
 }

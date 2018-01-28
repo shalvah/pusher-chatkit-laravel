@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Pusher\Chatkit\Laravel\Facades;
+namespace Chatkit\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

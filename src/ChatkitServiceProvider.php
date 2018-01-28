@@ -11,18 +11,16 @@
 
 declare(strict_types=1);
 
-namespace Pusher\Chatkit\Laravel;
+namespace Chatkit\Laravel;
 
 use Chatkit\Chatkit;
 use Illuminate\Contracts\Container\Container;
-use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Lumen\Application as LumenApplication;
 
 /**
- * This is the Pusher service provider class.
+ * Chatkit service provider
  *
- * @author Vincent Klaiber <hello@vinkla.com>
+ * @author Shalvah Adebayo <shalvah.adebayo@gmail.com>
  */
 class ChatkitServiceProvider extends ServiceProvider
 {
