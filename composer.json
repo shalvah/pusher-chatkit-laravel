@@ -1,6 +1,6 @@
 {
-    "name": "pusher/pusher-http-laravel",
-    "description": "A Pusher bridge for Laravel",
+    "name": "pusher/pusher-chatkit-laravel",
+    "description": "Laravel wrapper for the Chatkit PHP SDK",
     "license": "MIT",
     "keywords": ["laravel", "pusher", "chatkit", "http", "api", "php-chatkit-server", "rest", "realtime", "chat"],
     "authors": [
