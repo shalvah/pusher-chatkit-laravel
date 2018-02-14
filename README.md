@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-composer require shalvah/pusher-chatkit-laravel
+composer require shalvah/pusher-chatkit-laravel:dev-master
 ```
 
 ## Quick start
