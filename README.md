@@ -16,6 +16,13 @@ composer require shalvah/pusher-chatkit-laravel:dev-master
 ```
 
 ## Quick start
+Publish the config file by running:
+
+```bash
+php artisan vendor:publish --provider="Chatkit\Laravel\ChatkitServiceProvider"
+```
+
+This will create a `config/chatkit.php` file in your app that you can modify to match your configuration.
 Retrieve your Chatkit app details from your Chatkit app dashboard and add them in your `.env` file like so:
 
 ```bash
@@ -53,13 +60,7 @@ public function startChatting(ChatkitManager $chatkitManager, string $introMessa
 
 ## Configuration
 
-The minimum configuration you'll need is to add your Chatkit app credentials to your `.env` file. If you'd like further customisation (for instance, to use multiple connections), you'll need to publish the config file:
-
-```bash
-php artisan vendor:publish --provider="Chatkit\Laravel\ChatkitServiceProvider"
-```
-
-This will create a `config/chatkit.php` file in your app that you can modify to match your configuration. 
+The `config/chatkit.php` file allows you to configure your Chatkit usage (for instance, to use multiple connections).
 
 ## Working with Multiple Connections
 Supposing you have to work with multiple chat apps from the same server. You can do this easily by publishing the config file as explained above, then configuring your various connections in it as needed. You can then switch connections as needed using either the facade or Manager class:
