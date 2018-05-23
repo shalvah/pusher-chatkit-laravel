@@ -65,10 +65,6 @@ class ChatkitFactory
      */
     protected function createClient(array $config): Chatkit
     {
-        return new Chatkit(
-            $config['instance_locator'],
-            $config['key'],
-            $config
-        );
+        return new Chatkit($config);
     }
 }
