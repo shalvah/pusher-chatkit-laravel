@@ -1,6 +1,8 @@
 # Laravel Chatkit
 
-![pusher](https://user-images.githubusercontent.com/499192/28176443-b96829f8-67f7-11e7-8cad-7322d296266e.jpg)
+<p align="center">
+<img src="https://d21buns5ku92am.cloudfront.net/67967/logo/retina-1530539712.png" alt="Pusher" width="150" height="150">
+</p>
 
 > A Laravel wrapper for [Pusher Chatkit](https://github.com/pusher/chatkit-server-php). Find out more about Chatkit [here](https://pusher.com/chatkit).
 
@@ -37,11 +39,11 @@ That's it. You can use Chatkit via the facade in your app:
 use Chatkit\Laravel\Facades\Chatkit;
 
 
-public function startChatting(string $introMessage)
+public function startChatting()
 {
-    Chatkit::createUser('hc', 'Hamilton Chapman');
-    Chatkit::createRoom('hc', ['name' => 'Cat Lovers']);
-    Chatkit::sendMessage('hc', 'r001', $introMessage);
+    Chatkit::createUser(['id' => 'hc', 'name' => 'Hamilton Chapman']);
+    Chatkit::createRoom(['creator_id' => 'hc', 'name' => 'Cat Lovers']);
+    Chatkit::sendMessage(['sender_id' => 'hc', 'room_id' => 'r001', 'text' => 'Hi, everyone!' ]);
 }
 ```
 Alternatively, you may inject the `ChatkitManager` into your methods:
@@ -50,11 +52,15 @@ Alternatively, you may inject the `ChatkitManager` into your methods:
 <?php
 use Chatkit\Laravel\ChatkitManager;
 
-public function startChatting(ChatkitManager $chatkitManager, string $introMessage)
-[
-    $chatkitManager->createUser('hc', 'Hamilton Chapman');
-    $chatkitManager->createRoom('hc', ['name' => 'Cat Lovers']);
-    $chatkitManager->sendMessage('hc', 'r001', $introMessage);
+public function startChatting(ChatkitManager $chatkitManager)
+{
+    $chatkitManager->createUser(['id' => 'hc', 'name' => 'Hamilton Chapman']);
+    $chatkitManager->createRoom(['creator_id' => 'hc', 'name' => 'Cat Lovers']);
+    $chatkitManager->sendMessage([
+        'sender_id' => 'hc', 
+        'room_id' => 'r001', 
+        'text' => 'Hi, everyone!'
+    ]);
 }
 ````
 
@@ -69,17 +75,17 @@ Supposing you have to work with multiple chat apps from the same server. You can
 <?php
 
 // use whatever connection is default -- by default, this is 'main'
-Chatkit::createRoom('admin', ['name' => 'Just Chat']);
+Chatkit::createRoom(['creator_id' =>'admin', 'name' => 'Just Chat']);
 
 // use the 'main' connection
-Chatkit::connection('main')->createRoom('admin', ['name' => 'Just Chat']);
+Chatkit::connection('main')->createRoom(['creator_id' =>'admin', 'name' => 'Just Chat']);
 
 // use the 'test' connection
 Chatkit::connection('test')->createRoom('admin', ['name' => 'Just Chat']);
 
 // use the 'secondary' connection
 Chatkit::setDefaultConnection('secondary');
-Chatkit::createRoom('admin', ['name' => 'Just Chat']);
+Chatkit::createRoom(['creator_id' =>'admin', 'name' => 'Just Chat']);
 ```
 
 ## Documentation
