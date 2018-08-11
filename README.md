@@ -1,10 +1,10 @@
-# Laravel Chatkit
+# Laravel-Chatkit
 
 <p align="center">
-<img src="https://d21buns5ku92am.cloudfront.net/67967/logo/retina-1530539712.png" alt="Pusher" width="150" height="150">
+<img src="./pusher.png" alt="Pusher" width="150" height="150">
 </p>
 
-> A Laravel wrapper for [Pusher Chatkit](https://github.com/pusher/chatkit-server-php). Find out more about Chatkit [here](https://pusher.com/chatkit).
+> Laravel wrapper for [Pusher Chatkit](https://github.com/pusher/chatkit-server-php). Find out more about Chatkit [here](https://pusher.com/chatkit).
 
 [![Build Status](https://img.shields.io/travis/shalvah/pusher-chatkit-laravel/master.svg?style=flat)](https://travis-ci.org/shalvah/pusher-chatkit-laravel)
 [![Latest Version](https://img.shields.io/github/release/shalvah/pusher-chatkit-laravel.svg?style=flat)](https://github.com/shalvah/pusher-chatkit-laravel/releases)
