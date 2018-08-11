@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Chatkit\Tests\Laravel;
 
 use Chatkit\Laravel\Facades\Chatkit as ChatkitFacade;
+use Mockery;
 
 /**
  * Class PackageTest
@@ -17,7 +18,7 @@ class PackageTest extends BasePackageTest
         $this->manager->getConfig()->shouldReceive('get')->once()
             ->with('chatkit.default')->andReturn('chatkit');
         $this->chatkit->shouldReceive('createUser')
-            ->with(\Mockery::subset(['id' => 'id', 'name' => 'Full Name']))->once();
+            ->with(Mockery::subset(['id' => 'id', 'name' => 'Full Name']))->once();
         $this->manager->createUser(['id' => 'id', 'name' => 'Full Name']);
     }
 
@@ -26,7 +27,7 @@ class PackageTest extends BasePackageTest
         $this->manager->getConfig()->shouldReceive('get')->once()
             ->with('chatkit.default')->andReturn('chatkit');
         $this->chatkit->shouldReceive('createUser')
-            ->with(\Mockery::subset(['id' => 'id', 'name' => 'Full Name']))->once();
+            ->with(Mockery::subset(['id' => 'id', 'name' => 'Full Name']))->once();
         ChatkitFacade::createUser(['id' => 'id', 'name' => 'Full Name']);
     }
 
