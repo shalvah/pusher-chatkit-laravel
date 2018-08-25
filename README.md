@@ -7,6 +7,7 @@
 > Laravel wrapper for [Pusher Chatkit](https://github.com/pusher/chatkit-server-php). Find out more about Chatkit [here](https://pusher.com/chatkit).
 
 [![Build Status](https://img.shields.io/travis/shalvah/pusher-chatkit-laravel/master.svg?style=flat)](https://travis-ci.org/shalvah/pusher-chatkit-laravel)
+[![Latest Stable Version](https://poser.pugx.org/shalvah/pusher-chatkit-laravel/v/stable)](https://packagist.org/packages/shalvah/pusher-chatkit-laravel) [![Total Downloads](https://poser.pugx.org/shalvah/pusher-chatkit-laravel/downloads)](https://packagist.org/packages/shalvah/pusher-chatkit-laravel)
 [![Latest Version](https://img.shields.io/github/release/shalvah/pusher-chatkit-laravel.svg?style=flat)](https://github.com/shalvah/pusher-chatkit-laravel/releases)
 
 *Note*: This package requires Laravel 5.5 or above 
