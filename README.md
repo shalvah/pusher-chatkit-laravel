@@ -17,6 +17,7 @@
 ```bash
 composer require shalvah/pusher-chatkit-laravel
 ```
+The package will automatically make use of the latest stable version of the Chatkit PHP library (currently 1.1.0).
 
 ## Quick start
 Publish the config file by running:
