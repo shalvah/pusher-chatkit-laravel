@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": "^7.0",
-        "illuminate/contracts": "^5.5.*",
-        "illuminate/support": "^5.5.*",
+        "illuminate/contracts": "^5.5",
+        "illuminate/support": "^5.5",
         "graham-campbell/manager": "^3.0 || ^4.0",
         "pusher/pusher-chatkit-server": "^1.0.0"
     },
