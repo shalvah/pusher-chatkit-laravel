@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Chatkit\Laravel;
 
 use Chatkit\Chatkit;
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
 /**
@@ -53,7 +54,7 @@ class ChatkitFactory
             }
         }
 
-        return array_only($config, $this->configKeys);
+        return Arr::only($config, $this->configKeys);
     }
 
     /**
