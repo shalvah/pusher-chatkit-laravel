@@ -1,5 +1,7 @@
 # Laravel-Chatkit
 
+_ChatKit is shutting down - https://blog.pusher.com/narrowing-our-product-focus_
+
 <p align="center">
 <img src="./pusher.png" alt="Pusher" width="150" height="150">
 </p>
